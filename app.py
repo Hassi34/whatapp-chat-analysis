@@ -14,6 +14,11 @@ from wordcloud import WordCloud
 import seaborn as sns 
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
+
+st.sidebar.header('Get the Code')
+link = '[GitHub](https://github.com/Hassi34/whatapp-chat-analysis.git)'
+st.sidebar.markdown(link, unsafe_allow_html=True)
+
 if uploaded_file is not None:
     # To read file as bytes:
     bytes_data = uploaded_file.getvalue()
